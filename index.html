@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style="background-color:rgb(225, 175,230);background-image: url('https://i.pinimg.com/originals/2a/05/15/2a05156f0ae6e576e6b54f15eaaa74ae.jpg');background-repeat: no-repeat;background-size:100%;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CITY SUSHI</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://courses.cs.cityu.edu.hk/cs2204/cs2204cw3.js"></script>
+
+    <style>
+        dt{font-size:20px;
+           font-weight: bold;
+           color:brown;
+        }
+        #shopinformation{
+            width: 45%;
+            float:left;
+            border:1px solid;
+            border-radius:25px;
+            padding:2%;
+            background-image: url('https://i.pinimg.com/originals/b0/c5/f2/b0c5f29fcd1e4d169e76f2aed2e619bc.jpg');
+            background-repeat:repeat-x;
+            background-size: auto 100%;
+        }
+        #Last,#offer{
+            color:red;
+            font-weight:bold;
+            transition: 1s ease;
+        }
+        #promotion-information{
+            float:right;
+            width: 45%;
+            border:1px solid;
+            border-radius:25px;
+            padding:70px 2% 70px 2%;
+            text-align: center;
+            background-image: url('https://i.pinimg.com/originals/b0/c5/f2/b0c5f29fcd1e4d169e76f2aed2e619bc.jpg');
+            background-repeat:repeat-x;
+            background-size: auto 100%;
+        }
+        video{
+            width:100%;
+        }
+        #reservation{
+            float:right;
+            width: 45%;
+            padding:3% 2% 0 1%;
+        }
+        #reser{
+            color:brown;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        #date,#reserved{
+            width:30px;
+            padding:1% 7%;
+        }
+        #input{
+            padding-bottom:2%;
+        }
+        #datetime,#reserved-time,#number{
+            width:50%;
+        }
+        #button{
+            text-align: center;
+        }
+        .buttons{
+            width:30%;
+        }
+        #warn{
+            color: red;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="sushi">&#127843;</img>
+        <h1>CITY SUSHI</h1>
+    </header>
+
+	</div>
+    <div id="PageContent">
+        <div id="shopinformation">
+            <dl>
+                <dt>Address</dt>
+                <dd>83 Tat Chee Avenue,<br />Kowloon,<br/>Hong Kong</dd>
+                <dt>Tel</dt>
+                <dd>3442-7788</dd>
+                <dt>Business Hours</dt>
+                <dd>12:00-3:00pm<br />6:30-11:30pm<br /><span id="Last">Last Order 10:30pm</span></dd>
+                <dt>Signature Dishes</dt>
+                <dd>Foie gras with mustard seeds and green onions;Bisque-asmooth and creamy,<br/>French potage; Croque Monsieur-baked or fried boiled ham and cheese<br/>sandwich</dd>
+                <dt>Location</dt>
+                <dd>
+                    <img src="file:///C:/Users/%E5%BC%A0%E4%BE%9D%E5%87%A1/Documents/WeChat%20Files/wxid_y9xsovz3lszz22/FileStorage/File/2021-05/cw3/images/location.jpg" alt="location information">
+                    <br/>
+                    <br/>
+                    <a href="orderpage.html">
+                    <img src="file:///C:/Users/%E5%BC%A0%E4%BE%9D%E5%87%A1/Documents/WeChat%20Files/wxid_y9xsovz3lszz22/FileStorage/File/2021-05/cw3/images/button.png" alt="Order Page">
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div id="promotion-information">
+            <h3 id="offer">LUNCH TIME SPECIAL OFFER-$188 SUSHI SET 16 PIECES</h3>
+            <div class="video" style="width: 100%;height: 400px;">
+           <iframe width="450" height="350" src="https://www.bilibili.com/video/BV1vt411A7L4?from=search&seid=17290657513219221428" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="reservation">
+            <fieldset>
+                <legend id="reser">Reservation</legend>
+                    <div id="input">
+                    <label id="date" for="datetime">Date:</label>
+                    <input type="text" id="datetime" name="date" value="" />
+                    <br />
+                    <label id="reserved" for="reserved-time">Time:</label>
+                    <select id="reserved-time" name="reserved time">
+                        <option value="12:00-2:00pm" selected="selected">12:00-2:00pm</option>
+                        <option value="2:00-4:00pm">2:00-4:00pm</option>
+                        <option value="4:00-6:00pm">4:00-6:00pm</option>
+                    </select>
+                    <br/>
+                    <label id="numberofguests" for="number">No. of Guests:</label>
+                    <input type="number" id="number" name="no of guests" value="" />
+                    <br />
+                    </div>
+                    <span id="warn">Data not completed,please re-enter</span>
+                    <div id="button">
+                    <button class="buttons" type="submit" id="btn">Check Availability</button> 
+                    <button class="reset" id="reset" value="" />Reset</button> <span class="space"> </span>
+                    </div>
+            </fieldset>
+        </div>
+    </div>
+
+<footer>
+    <p>©CityU 2019 sources of images and text from Wikimedia Commoms and Courtesy of Icon pack by Icons8; designed by <a href="designpage.html">Eileen Zhang</a></p>
+</footer>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>ICS3U</title>
+<meta charse="utf-8">
+<style type="text/css">
+body{
+    margin: 5%;
+    height:95%;
+    background-image: url(../images/image1.jpg);
+    background-repeat:repeat-x;
+    background-size: auto 100%;
+}
+header{
+    position:static;
+    text-align: center;
+    margin:3% auto;
+    width: 40%;
+    border: 1px solid;
+    border-radius: 20px;
+    font:italic;
+    font-size:20px;
+    background-color: rgba(248, 230, 172, 0.4);
+    transition-property:width;
+    transition-duration:2s;
+}
+header:hover{
+    width:60%;
+}
+#sushi{
+    display:inline-block;
+}
+header h1{
+    display:inline-block;
+}
+footer{
+    clear:both;
+    padding:1%;
+}
+
+<script src="../javascript/main.js"></script>
+</body>
+</html>
